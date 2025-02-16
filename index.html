@@ -2,18 +2,131 @@
 <html lang="en">
 
 <head>
-	<title>Rug Soul</title>
+	<title>Rug Soul | RWA & DAO Powered by Polygon</title>
 	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="Rug Soul is a platform showcasing unique NFTs, redefining art, culture, and technology. Powered by Polygon, buy, redeem, and collect exclusive NFTs.">
+    <meta property="og:title" content="Rug Soul | NFTs, Art, and Culture Powered by Polygon">
+    <meta property="og:description" content="Rug Soul is a platform showcasing unique NFTs, redefining art, culture, and technology. Powered by Polygon, buy, redeem, and collect exclusive NFTs.">
+    <meta property="og:image" content="URL-to-an-image.jpg">
+    <meta property="og:url" content="https://www.rugsoul.rf.gd">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rug Soul | NFTs, Art, and Culture Powered by Polygon">
+    <meta name="twitter:description" content="Rug Soul is a platform showcasing unique NFTs, redefining art, culture, and technology. Powered by Polygon, buy, redeem, and collect exclusive NFTs.">
+    <meta name="twitter:image" content="URL-to-an-image.jpg">
+    <link rel="canonical" href="https://www.rugsoul.rf.gd">
+
+
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230327195509" />
 	<link rel="stylesheet" href="css/style.min.css?_v=20230327195509">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="robots" content="index, follow">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+:root{
+  --bg-color-1: #121212;
+  --bg-color-2: #FFD433;
+  --bg-color-3: #FF90E8;
+  --padding: 1rem 4rem;
+  --font-family: monospace;
+  --step: 0.5rem;
+}
+
+/*   transform: translate3d(-0.5rem, -0.5rem, 0) */
+button:is(:hover, :focus-visible) {
+  --active: 1;
+}
+
+button {
+  --active: 0;
+  color: white;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: bold;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+button span:first-of-type {
+  padding: var(--padding);
+}
+
+button span:not(:first-of-type) {
+  position: absolute;
+}
+
+[aria-hidden] { color: transparent; }
+button span {
+  inset: 0;
+  display: grid;
+  background: var(--bg);
+  place-items: center;
+  transition: 0.2s ease;
+  border: 2px solid black;
+/*   transform:
+    translate(
+      calc((var(--active) * var(--coefficient, 0)) * (var(--step) * -1)),
+      calc((var(--active) * var(--coefficient, 0)) * (var(--step) * -1))
+    ); */
+  translate:
+    calc((var(--active) * var(--coefficient, 0)) * (var(--step) * -1))
+    calc((var(--active) * var(--coefficient, 0)) * (var(--step) * -1))
+  ;
+}
+
+span:nth-of-type(1) {
+  --bg: var(--bg-color-3);
+}
+
+span:nth-of-type(2) {
+  --coefficient: 1;
+  --bg: var(--bg-color-2);
+}
+
+span:nth-of-type(3) {
+  --coefficient: 2;
+  --bg: var(--bg-color-1);
+}
+
+button:active {
+  --active: 0.5;
+}
+
+
+
+.btn {
+        background-color: #5EECFF;
+        color: black;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 30px;
+        margin-left: 10px;
+        transition: background 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #c51bf0;
+    }
+	</style>
 </head>
 
 <body>
+
+
 
 	<div class="preload-bg"></div>
 
@@ -72,7 +185,17 @@
 
 						<div class="welcome__goals goals block-cross-out _glass-blured">
 							<div class="goals__title text_grey"> <span class="text-accent_aqua">Rug Soul</span></div>
-							<div class="goals__description">Built on the Polygon Layer 2 network, we are creating a bigger & better space for artists to showcase their talents, collectors to invest in timeless pieces & consumers to own authentic luxury products.<br><span class="text-accent_orange">Secure your Rug Soul NFT today and be part of a legacy that redefines art, culture & innovation.</span></div>
+							<div class="goals__description">Built on the Polygon Layer 2 network, we are creating a bigger & better space for artists to showcase their talents, collectors to invest in timeless pieces & consumers to own authentic luxury products backed by Real-World Assets (RWA). As a decentralized autonomous organization (DAO), our community plays a vital role in shaping the future of art, culture & innovation.<br><span class="text-accent_orange">Secure your Rug Soul NFT today and be part of a legacy that redefines ownership in both the digital and physical worlds.</span>
+<br>
+<br>
+<a href="timeline.html">
+					<button>
+  <span aria-hidden="true">Rug Soul Timeline</span>
+  <span></span>
+  <span>Rug Soul Timeline</span>
+</button>
+</a>
+							</div>
 						</div>
 						<br>
 						<br>
@@ -85,11 +208,11 @@
 							<!-- <a href="/whitepaper/" class="animated-link"> -->
 
 							<div class="animated-link__wrapper animated-link__wrapper_rotate">
-								<span class="animated-link__text animated-link__text_outlined">Rug Soul</span>
+								<span class="animated-link__text animated-link__text_outlined">Rug Soul</span><br>
 								<span class="animated-link__append animated-link__append_outlined text-accent_violet"> Whitepaper</span>
 							</div>
 							<div class="animated-link__wrapper">
-								<span class="animated-link__text">Rug Soul</span>
+								<span class="animated-link__text">Rug Soul</span><br>
 								<span class="animated-link__append text-accent_violet"> Whitepaper</span>
 							</div>
 						</a>
@@ -109,25 +232,39 @@
 								<br>
 								<div class="years-block__text text-accent_aqua">369 NFTs</div>
 							</div>
-							<p class="what-we-do__text"><span class="text-accent_violet">Rug Soul (RS)</span> Our mission is to foster cultural preservation, support skilled artisans. Rug Soul redefine the intersection of art, culture & technology. <br><br>By seamlessly integrating traditional craftsmanship with the blockchain ecosystem, we aim to build a sustainable platform that delivers innovation, value & timeless beauty to our community.</p>
+							<p class="what-we-do__text"><span class="text-accent_violet">Rug Soul (RS)</span> Our mission is to preserve culture, empower artisans, redefine luxury by bridging the gap between traditional craftsmanship & blockchain technology. <br><br>Through Real-World Assets (RWA), we bring authenticity & tangible value to digital ownership. While our DAO ensures a transparent, community-driven ecosystem where collectors, creators & investors shape the future together.</p>
 						</div>
 					</section>
 
 					<div class="astronaut__container">
 						<div class="astronaut rellax" data-rellax-speed="-8">
-							<picture><source srcset="img/home/astronaut.webp" type="image/webp"><img src="img/home/astronaut.png" alt="astronaut"></picture>
+							<picture><source srcset="img/home/astronaut.webp" type="image/webp"><img src="img/home/astronaut.png" alt="Rug Soul astronaut"></picture>
 						</div>
 					</div>
 					<!-- //===  ============================================================================================ -->
+
+
 										<!-- //======= relocate = section ================================================================== -->
 					<section class="relocate">
-						<div class="relocate__title title">Total <span class="relocate__title title">Supply:</span><span class="menu__item_gradient"> 369 NFTs</span>
+						<div class="relocate__title title"><span class="relocate__title title"></span><span class="menu__item_gradient">OUR NFT Album </span>
 						</div>
-						<div class="relocate__title title">Launch <span class="relocate__title title">Price:</span><span class="menu__item_gradient"> 0.369 ETH/NFT</span>
-						</div>
+						<div class="relocate__title title">
+    Rug Soul: <span class="relocate__title title"></span>
+    <span class="menu__item_gradient"> 369 NFTs </span>
+    <a href="https://opensea.io/collection/rug-soul" target="_blank"><br>
+        <button class="btn">OpenSea</button>
+    </a>
+</div>
+<br>
+<div class="relocate__title title">
+    Thangka Soul: <span class="relocate__title title"></span>
+    <span class="menu__item_gradient"> 1 NFT </span>
+    <a href="https://rarible.com/thangkasoul/items" target="_blank"><br>
+        <button class="btn">Rarible</button>
+    </a>
+</div>
 
-						
-						</div>
+	</div>
 
 					</section>
 					<br>
@@ -148,21 +285,21 @@
 								<div class="card-partner__wrapper block-cross-in-link">
 									<span class="block-cross-in-link__left-elements"></span>
 									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/solidity.png" type="image/png"><img src="assets/solidity.png" alt="" class="card-partner__logo"></picture>
+									<picture><source srcset="assets/solidity.png" type="image/png"><img src="assets/solidity.png" alt="solidity" class="card-partner__logo"></picture>
 								</div>
 							</a>
 							<a class="partners__card card-partner" href="https://polygon.technology/" target="_blank">
 								<div class="card-partner__wrapper block-cross-in-link">
 									<span class="block-cross-in-link__left-elements"></span>
 									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/matic.png" type="image/png"><img src="assets/matic.png" alt="" class="card-partner__logo"></picture>
+									<picture><source srcset="assets/matic.png" type="image/png"><img src="assets/matic.png" alt="matic" class="card-partner__logo"></picture>
 								</div>
 							</a>
 							<a class="partners__card card-partner" href="https://trustwallet.com/" target="_blank">
 								<div class="card-partner__wrapper block-cross-in-link">
 									<span class="block-cross-in-link__left-elements"></span>
 									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/trust.png" type="image/png"><img src="assets/trust.png" alt="" class="card-partner__logo"></picture>
+									<picture><source srcset="assets/trust.png" type="image/png"><img src="assets/trust.png" alt="trust" class="card-partner__logo"></picture>
 								</div>
 							</a>
 						</div>
@@ -172,21 +309,21 @@
 								<div class="card-partner__wrapper block-cross-in-link">
 									<span class="block-cross-in-link__left-elements"></span>
 									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/opensea.png" type="image/png"><img src="assets/opensea.png" alt="" class="card-partner__logo"></picture>
+									<picture><source srcset="assets/opensea.png" type="image/png"><img src="assets/opensea.png" alt="opensea" class="card-partner__logo"></picture>
 								</div>
 							</a>
 							<a class="partners__card card-partner" href="https://niftymints.art/" target="_blank">
 								<div class="card-partner__wrapper block-cross-in-link">
 									<span class="block-cross-in-link__left-elements"></span>
 									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/nifty.png" type="image/png"><img src="assets/nifty.png" alt="" class="card-partner__logo"></picture>
+									<picture><source srcset="assets/nifty.png" type="image/png"><img src="assets/nifty.png" alt="nifty" class="card-partner__logo"></picture>
 								</div>
 							</a>
 							<a class="partners__card card-partner" href="https://www.arweave.org/" target="_blank">
 								<div class="card-partner__wrapper block-cross-in-link">
 									<span class="block-cross-in-link__left-elements"></span>
 									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/arweave.png" type="image/png"><img src="assets/arweave.png" alt="" class="card-partner__logo"></picture>
+									<picture><source srcset="assets/arweave.png" type="image/png"><img src="assets/arweave.png" alt="arweave" class="card-partner__logo"></picture>
 								</div>
 							</a>
 
@@ -198,21 +335,21 @@
 								<div class="card-partner__wrapper block-cross-in-link">
 									<span class="block-cross-in-link__left-elements"></span>
 									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/RCN.png" type="image/png"><img src="assets/RCN.png" alt="" class="card-partner__logo"></picture>
+									<picture><source srcset="assets/RCN.png" type="image/png"><img src="assets/RCN.png" alt="RCN" class="card-partner__logo"></picture>
 								</div>
 							</a>
 							<a class="partners__card card-partner" href="https://ethermail.io/" target="_blank">
 								<div class="card-partner__wrapper block-cross-in-link">
 									<span class="block-cross-in-link__left-elements"></span>
 									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/ethermail.png" type="image/png"><img src="assets/ethermail.png" alt="" class="card-partner__logo"></picture>
+									<picture><source srcset="assets/ethermail.png" type="image/png"><img src="assets/ethermail.png" alt="ethermail" class="card-partner__logo"></picture>
 								</div>
 							</a>
 							<a class="partners__card card-partner" href="https://fleek.xyz/" target="_blank">
 								<div class="card-partner__wrapper block-cross-in-link">
 									<span class="block-cross-in-link__left-elements"></span>
 									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/fleek.png" type="image/png"><img src="assets/fleek.png" alt="" class="card-partner__logo"></picture>
+									<picture><source srcset="assets/fleek.png" type="image/png"><img src="assets/fleek.png" alt="fleek" class="card-partner__logo"></picture>
 								</div>
 							</a>
 						</div>
@@ -268,6 +405,25 @@
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20230327195509"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 	<script src="js/app.min.js?_v=20230327195509"></script>
+
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Rug Soul",
+  "url": "https://www.rugsoul.rf.gd",
+  "description": "Rug Soul is a platform showcasing unique NFTs, redefining art, culture, and technology.",
+  "sameAs": [
+    "https://www.instagram.com/rugsoul369",
+    "https://twitter.com/soul_rug",
+    "https://discord.gg/anFXX3qF6V",
+    "https://t.me/Rugsoulcommunity",
+    "https://github.com/Rug-Soul"
+
+  ]
+}
+</script>
+
 </body>
 
 </html>

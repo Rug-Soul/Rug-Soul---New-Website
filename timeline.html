@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Rug Soul | RWA & DAO Powered by Polygon</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Rug Soul is a platform showcasing unique NFTs, redefining art, culture, and technology. Powered by Polygon, buy, redeem, and collect exclusive NFTs.">
+    <meta property="og:title" content="Rug Soul | NFTs, Art, and Culture Powered by Polygon">
+    <meta property="og:description" content="Rug Soul is a platform showcasing unique NFTs, redefining art, culture, and technology. Powered by Polygon, buy, redeem, and collect exclusive NFTs.">
+    <meta property="og:image" content="URL-to-an-image.jpg">
+    <meta property="og:url" content="https://www.rugsoul.rf.gd">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rug Soul | NFTs, Art, and Culture Powered by Polygon">
+    <meta name="twitter:description" content="Rug Soul is a platform showcasing unique NFTs, redefining art, culture, and technology. Powered by Polygon, buy, redeem, and collect exclusive NFTs.">
+    <meta name="twitter:image" content="URL-to-an-image.jpg">
+    <link rel="canonical" href="https://www.rugsoul.rf.gd">
+
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230327195509" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230327195509">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="robots" content="index, follow">
+
+<style>
+	* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #1d2123;
+	font-family: "Inter", sans-serif;
+}
+
+ul {
+	list-style: none;
+	margin: 0 !important;
+}
+
+a {
+	text-decoration: none !important;
+	display: inline-block;
+}
+
+img {
+	max-width: 100%;
+}
+
+button:focus {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: ;
+	margin: 0;
+}
+p {
+	font-size: 14px;
+	line-height: 26px;
+	margin: 0;
+}
+.container {
+	width: 100%;
+	max-width: 1140px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.timelines h2 {
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 40px;
+	font-size: 32px;
+}
+.d-flex-2 {
+	display: flex;
+	align-items: center;
+}
+.all-timelines {
+	position: relative;
+}
+.timelines h2 {
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+.all-timelines::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 100%;
+	width: 2px;
+	background: #efa22f;
+	top: 20px;
+}
+.single-timeline {
+	margin-bottom: 22px;
+}
+.timeline-blank {
+	width: 50%;
+}
+.timeline-text {
+	width: 50%;
+	padding-left: 30px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+.timeline-text h6 {
+	color: #f0f1f2;
+	font-weight: 900;
+	display: inline-block;
+	font-size: 1rem;
+}
+.timeline-text span {
+	color: #f0f1f2;
+	display: block;
+	width: 100%;
+}
+.single-timeline:nth-child(even) .timeline-text span {
+	text-align: right;
+}
+.t-square {
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: -6px;
+	background: #efa22f;
+}
+.single-timeline:nth-child(even) {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+.single-timeline:nth-child(even) .t-square {
+	right: -6px;
+	left: unset;
+}
+.single-timeline:nth-child(even) .timeline-text {
+	padding-left: 0;
+	padding-right: 30px;
+	text-align: right;
+}
+
+@media all and (max-width: 991px) {
+}
+@media all and (max-width: 768px) {
+	.all-timelines::before {
+		right: unset;
+		top: 0;
+	}
+	.single-timeline:nth-child(2n) .timeline-text {
+		padding-left: 30px;
+		padding-right: 0;
+		text-align: left;
+	}
+	.single-timeline:nth-child(2n) .t-square {
+		left: -6px;
+		right: unset;
+	}
+	.timeline-blank {
+		display: none;
+	}
+	.timeline-text {
+		width: 100%;
+	}
+	.single-timeline:nth-child(even) .timeline-text span {
+		text-align: left !important;
+	}
+}
+@media all and (max-width: 575px) {
+}
+@media all and (max-width: 360px) {
+	.all-timelines::before {
+		top: 32px;
+	}
+}
+
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__wrapper">
+					<a class="header__logo" href="index.html"><picture><source srcset="img/logo.png" type="image/png"><img src="img/logo.png" alt="Rug Soul logo"></picture></a>
+					<nav class="header__menu menu">
+						<ul class="menu__items">
+							<li class="menu-footer__item"><a href="index.html">Home</a></li>
+							<li class="menu__item"><a href="roadmap.html">Roadmap</a></li>
+							<li class="menu__item menu__item_gradient"><a href="https://opensea.io/collection/rug-soul">369 NFTs</a></li>
+							<li class="menu__item text-accent_orange"><a href="redeem.html">Redeem NFT</a></li>
+							<li class="menu__item"><a href="contract.html">Contracts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="Rug Soulstories">
+			<div class="Rug Soulstories__container">
+				<div class="Rug Soulstories__wrapper">
+					<section class="stories">
+
+						</div>
+					
+
+
+
+<!-- //=== CASCADE = section (tips for interview)================================================================== -->
+				<div class="timeline-area">
+	<div class="container">
+		<div class="timelines">
+			<h2><b><u>Rug Soul Timeline</u></b></h2>
+			<br>
+<br>
+		</div>
+		<div class="all-timelines">
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>May 2024</h6> — Team Formation for Rug Soul Project.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>May 2024 </h6>— Conceptualization about the Rug Soul Ecosystem.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>August 2024</h6> — Partnership With Rug Creation Nepal for First RWA integration product.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>September 2024</h6> — Community Building on social media platforms.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>November 2024</h6> — Rug Soul Whitepaper Launch on Discord.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>December 2024</h6> — Rug Soul Website Launched.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>December 2024</h6> — Github Account Created.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>December 2024</h6> — Agreement with Rug Creation Nepal published as NFT on Solana chain.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>January 2025</h6> — Rug Soul 369 NFTs (1/1 Limited Edition) Launched on Polygon.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>January 2025 </h6>— Agreement with Rug Creation Nepal published as NFT on Polygon chain.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>January 2025</h6> — Every Rug Soul Data has been uploaded on Github. First step to be an Opensourced.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>January 2025</h6> — Version 2.0 Website Launched 
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>February 2025</h6> — Partnership with Major Supporters
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>February 2025</h6> — Team Expansion on Rug Soul
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>February 2025</h6> — 1/1<b> Thangka Soul</b> NFT Minted on Rarible
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6>Coming Soon </h6> — Major Partnership & System integration (details coming soon) <br>Join Our Discord to get latest Updates.
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<section class="relocate">
+
+<div class="relocate__text text-relocate">
+							<div class="text-relocate__main  text-accent_aqua">Rug Soul <span class="text-accent_orange">#</span>Hashtags
+							<div class="text-relocate__hashes">#Rugsoul #Polygonsoul #PolygonNFT #369
+								#Rugsoulcoupon #Polygonsoularmy #Rug #369NFTs #Soul #Polygoncommunity #Rugsoulart #RS #UtilityNFT 
+								#Only369
+					</div>
+						</div>
+						</div></div>
+
+	</section>
+
+
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__items">
+							<li class="menu-footer__item"><a href="roadmap.html">Roadmap</a></li>
+							<li class="menu__item menu__item_gradient"><a href="https://opensea.io/collection/rug-soul">369 NFTs</a></li>
+							<li class="menu-footer__item text-accent_orange"><a href="redeem.html">Redeem NFT</a></li>
+							<li class="menu-footer__item"><a href="contract.html">Contracts</a></li>
+						</ul>
+					<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="footer__social">
+  <a href="https://opensea.io/collection/rug-soul" target="_blank" title="OpenSea"><img src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.svg" alt="OpenSea" style="width: 40px; height: 40px;"></a>
+  <a href="https://github.com/Rug-Soul" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 40px; color: #333;"></i></a>
+  <a href="https://medium.com/@rugsoul369" target="_blank" title="Medium"><i class="fab fa-medium" style="font-size: 40px; color: #00ab6c;"></i></a>
+  <a href="https://x.com/soul_rug" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 40px; color: #1da1f2;"></i></a>
+  <a href="https://discord.gg/anFXX3qF6V" target="_blank" title="Discord"><i class="fab fa-discord" style="font-size: 40px; color: #7289da;"></i></a>
+  <a href="https://t.me/Rugsoulcommunity" target="_blank" title="Telegram"><i class="fab fa-telegram" style="font-size: 40px; color: #0088cc;"></i></a>
+  <a href="https://instagram.com/rugsoul369" target="_blank" title="Instagram"><i class="fab fa-instagram" style="font-size: 40px; color: #e1306c;"></i></a>
+</div>
+					</nav>
+					<div class="footer__copyright">© 2025 Anonymous Studio</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230327195509"></script>
+	<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js?_v=20230327195509"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20230327195509"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+	<script src="js/app.min.js?_v=20230327195509"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Rug Soul",
+  "url": "https://www.rugsoul.rf.gd",
+  "description": "Rug Soul is a platform showcasing unique NFTs, redefining art, culture, and technology.",
+  "sameAs": [
+    "https://www.instagram.com/rugsoul369",
+    "https://twitter.com/soul_rug",
+    "https://discord.gg/anFXX3qF6V",
+    "https://t.me/Rugsoulcommunity",
+    "https://github.com/Rug-Soul"
+
+  ]
+}
+</script>
+
+</body>
+
+</html>
