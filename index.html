@@ -26,11 +26,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		{
-  display: grid;
-  place-items: center;
-  height: 100vh;
-}
+
 
 :root{
   --bg-color-1: #121212;
@@ -121,6 +117,47 @@ button:active {
     .btn:hover {
         background-color: #c51bf0;
     }
+
+
+
+	@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before, .logos:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+
+.logo_items {
+  display: inline-block;
+  animation: 35s slides infinite linear;
+}
+
+.logos:hover .logo_items {
+  animation-play-state: paused;
+}
+
+.logo_items img{
+  height: 180px;
+}
 	</style>
 </head>
 
@@ -216,6 +253,25 @@ button:active {
 								<span class="animated-link__append text-accent_violet"> Whitepaper</span>
 							</div>
 						</a>
+
+
+
+						<br>
+						<br>
+						<br>
+<a href="assets/presentation.pdf" class="animated-link"  target="_blank">
+
+							<!-- <a href="/prospectus/" class="animated-link"> -->
+
+							<div class="animated-link__wrapper animated-link__wrapper_rotate">
+								<span class="animated-link__text animated-link__text_outlined">Rug Soul</span><br>
+								<span class="animated-link__append animated-link__append_outlined text-accent_violet">Prospectus</span>
+							</div>
+							<div class="animated-link__wrapper">
+								<span class="animated-link__text">Rug Soul</span><br>
+								<span class="animated-link__append text-accent_violet">Prospectus</span>
+							</div>
+						</a>
 					</section>
 
 					
@@ -258,12 +314,19 @@ button:active {
 <br>
 <div class="relocate__title title">
     Thangka Soul: <span class="relocate__title title"></span>
-    <span class="menu__item_gradient"> 1 NFT </span>
+    <span class="menu__item_gradient"> 1/1 NFT </span>
     <a href="https://rarible.com/thangkasoul/items" target="_blank"><br>
         <button class="btn">Rarible</button>
     </a>
 </div>
-
+<br>
+<div class="relocate__title title">
+    Mask Soul: <span class="relocate__title title"></span>
+    <span class="menu__item_gradient"> (COMING SOON) </span>
+    <a href="#" target="_blank"><br>
+        <button class="btn">Decentraland</button>
+    </a>
+</div>
 	</div>
 
 					</section>
@@ -275,86 +338,78 @@ button:active {
 					<br>
 					<br>
 					<br>
-					<!-- //=== partners = section ============================================================================================ -->
-					<section class="partners">
-						<div class="partners__title title">Tech Stack<span class="text_grey"> & </span><span class="text-accent_orange">Platforms</span>
-						</div>
-						<div class="partners__cards">
-							
-							<a class="partners__card card-partner" href="https://soliditylang.org/" target="_blank">
-								<div class="card-partner__wrapper block-cross-in-link">
-									<span class="block-cross-in-link__left-elements"></span>
-									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/solidity.png" type="image/png"><img src="assets/solidity.png" alt="solidity" class="card-partner__logo"></picture>
-								</div>
-							</a>
-							<a class="partners__card card-partner" href="https://polygon.technology/" target="_blank">
-								<div class="card-partner__wrapper block-cross-in-link">
-									<span class="block-cross-in-link__left-elements"></span>
-									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/matic.png" type="image/png"><img src="assets/matic.png" alt="matic" class="card-partner__logo"></picture>
-								</div>
-							</a>
-							<a class="partners__card card-partner" href="https://trustwallet.com/" target="_blank">
-								<div class="card-partner__wrapper block-cross-in-link">
-									<span class="block-cross-in-link__left-elements"></span>
-									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/trust.png" type="image/png"><img src="assets/trust.png" alt="trust" class="card-partner__logo"></picture>
-								</div>
-							</a>
-						</div>
-						<br>
-						<div class="partners__cards">
-							<a class="partners__card card-partner" href="https://opensea.io/collection/rug-soul" target="_blank">
-								<div class="card-partner__wrapper block-cross-in-link">
-									<span class="block-cross-in-link__left-elements"></span>
-									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/opensea.png" type="image/png"><img src="assets/opensea.png" alt="opensea" class="card-partner__logo"></picture>
-								</div>
-							</a>
-							<a class="partners__card card-partner" href="https://niftymints.art/" target="_blank">
-								<div class="card-partner__wrapper block-cross-in-link">
-									<span class="block-cross-in-link__left-elements"></span>
-									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/nifty.png" type="image/png"><img src="assets/nifty.png" alt="nifty" class="card-partner__logo"></picture>
-								</div>
-							</a>
-							<a class="partners__card card-partner" href="https://www.arweave.org/" target="_blank">
-								<div class="card-partner__wrapper block-cross-in-link">
-									<span class="block-cross-in-link__left-elements"></span>
-									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/arweave.png" type="image/png"><img src="assets/arweave.png" alt="arweave" class="card-partner__logo"></picture>
-								</div>
-							</a>
+					<br>
+					<br>
+					<br>
+					<br>
 
-						</div>
-						<br>
-						<div class="partners__cards">
-							
-							<a class="partners__card card-partner" href="https://rugcreationnepal.com" target="_blank">
-								<div class="card-partner__wrapper block-cross-in-link">
-									<span class="block-cross-in-link__left-elements"></span>
-									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/RCN.png" type="image/png"><img src="assets/RCN.png" alt="RCN" class="card-partner__logo"></picture>
-								</div>
-							</a>
-							<a class="partners__card card-partner" href="https://ethermail.io/" target="_blank">
-								<div class="card-partner__wrapper block-cross-in-link">
-									<span class="block-cross-in-link__left-elements"></span>
-									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/ethermail.png" type="image/png"><img src="assets/ethermail.png" alt="ethermail" class="card-partner__logo"></picture>
-								</div>
-							</a>
-							<a class="partners__card card-partner" href="https://fleek.xyz/" target="_blank">
-								<div class="card-partner__wrapper block-cross-in-link">
-									<span class="block-cross-in-link__left-elements"></span>
-									<span class="block-cross-in-link__right-elements"></span>
-									<picture><source srcset="assets/fleek.png" type="image/png"><img src="assets/fleek.png" alt="fleek" class="card-partner__logo"></picture>
-								</div>
-							</a>
-						</div>
-					</section>
+<!-- //=== partners = section ============================================================================================ -->
+<section class="partners">
+	<div class="partners__title title">Tech Stack<span class="text_grey"> & </span><span class="text-accent_orange">Platforms</span>
+	</div>
+	<div class="logos">
+		<div class="logo_items">
+			
+				<a href="https://soliditylang.org/" target="_blank"><img src="assets/solidity.png"></a>
+				
+					<a href="https://polygon.technology/" target="_blank"><img src="assets/matic.png"></a>
 
+					<a href="https://magiceden.io/collections/polygon/0x6e1ceaa0c6a2d425080c0ed3779b71b034c427e0" target="_blank"><img src="assets/magiceden.png"></a>
+					
+						<a href="https://trustwallet.com/" target="_blank"><img src="assets/trust.png"></a>
+						
+							<a href="https://niftymints.art/" target="_blank"><img src="assets/nifty.png"></a>
+							
+								<a href="https://decentraland.org/" target="_blank"><img src="assets/decentraland.png"></a>
+								
+									<a href="https://fleek.xyz/" target="_blank"><img src="assets/fleek.png"></a>
+									
+										<a href="https://www.arweave.org/" target="_blank"><img src="assets/arweave.png"></a>
+										
+											<a href="https://opensea.io/collection/rug-soul" target="_blank"><img src="assets/opensea.png"></a>
+											
+												<a href="https://ethermail.io/" target="_blank"><img src="assets/ethermail.png"></a>
+												
+												<a href="https://trustwallet.com/" target="_blank"><img src="assets/trust.png"></a>
+													
+														<a href="https://rarible.com/thangkasoul/items" target="_blank"><img src="assets/rarible.png"></a>
+														
+															<a href="https://rugcreationnepal.com" target="_blank"><img src="assets/RCN.png"></a>
+		</div>
+
+			<div class="logo_items">
+				
+					<a href="https://soliditylang.org/" target="_blank"><img src="assets/solidity.png"></a>
+					
+						<a href="https://polygon.technology/" target="_blank"><img src="assets/matic.png"></a>
+
+						<a href="https://magiceden.io/collections/polygon/0x6e1ceaa0c6a2d425080c0ed3779b71b034c427e0" target="_blank"><img src="assets/magiceden.png"></a>
+						
+							<a href="https://trustwallet.com/" target="_blank"><img src="assets/trust.png"></a>
+							
+								<a href="https://niftymints.art/" target="_blank"><img src="assets/nifty.png"></a>
+								
+									<a href="https://decentraland.org/" target="_blank"><img src="assets/decentraland.png"></a>
+									
+										<a href="https://fleek.xyz/" target="_blank"><img src="assets/fleek.png"></a>
+										
+											<a href="https://www.arweave.org/" target="_blank"><img src="assets/arweave.png"></a>
+											
+												<a href="https://opensea.io/collection/rug-soul" target="_blank"><img src="assets/opensea.png"></a>
+												
+													<a href="https://ethermail.io/" target="_blank"><img src="assets/ethermail.png"></a>
+													
+													<a href="https://trustwallet.com/" target="_blank"><img src="assets/trust.png"></a>
+														
+															<a href="https://rarible.com/thangkasoul/items" target="_blank"><img src="assets/rarible.png"></a>
+															
+																<a href="https://rugcreationnepal.com" target="_blank"><img src="assets/RCN.png"></a>
+			</div>
+	</div>
+	</section>
+
+					<!-- //=============================================================================================== -->
+					
 <section class="relocate">
 
 <div class="relocate__text text-relocate">

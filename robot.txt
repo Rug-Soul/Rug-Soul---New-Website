@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /user/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /search?q=*
+Disallow: /private/
+
+Allow: /public/
+Allow: /blog/
+Allow: /collections/
+Allow: /nfts/
+Allow: /about/
+Allow: /contact/
+
+Sitemap: https://rugsoul.rf.gd/sitemap.xml
