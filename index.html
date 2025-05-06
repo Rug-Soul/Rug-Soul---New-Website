@@ -33,7 +33,6 @@
   --bg-color-2: #FFD433;
   --bg-color-3: #FF90E8;
   --padding: 1rem 4rem;
-  --font-family: monospace;
   --step: 0.5rem;
 }
 
@@ -63,7 +62,7 @@ button span:not(:first-of-type) {
   position: absolute;
 }
 
-[aria-hidden] { color: transparent; }
+[aria-hidden] { color: #ffffff; }
 button span {
   inset: 0;
   display: grid;
@@ -103,7 +102,7 @@ button:active {
 
 
 .btn {
-        background-color: #5EECFF;
+        background-color: #c0ff5ea6;
         color: black;
         padding: 8px 16px;
         border: none;
@@ -158,6 +157,27 @@ button:active {
 .logo_items img{
   height: 180px;
 }
+
+.arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9;
+}
+.arrow a {
+  height: 39px;
+  width: 37px;
+  text-align: center;
+  background: #882c9c;
+  display: block;
+  border-radius: 3px;
+}
+.arrow a span {
+  color: #f2f2f2;
+  font-size: 25px;
+  line-height: 39px;
+  cursor: pointer;
+}
 	</style>
 </head>
 
@@ -175,7 +195,7 @@ button:active {
 					<nav class="header__menu menu">
 						<ul class="menu__items">
 							<li class="menu__item"><a href="roadmap.html">Roadmap</a></li>
-							<li class="menu__item menu__item_gradient"><a href="https://opensea.io/collection/rug-soul">369 NFTs</a></li>
+							<li class="menu__item menu__item_gradient"><a href="nftblog.html">NFT Blog</a></li>
 							<li class="menu__item text-accent_orange"><a href="redeem.html">Redeem NFT</a></li>
 							<li class="menu__item"><a href="contract.html">Contracts</a></li>
 						</ul>
@@ -222,7 +242,7 @@ button:active {
 
 						<div class="welcome__goals goals block-cross-out _glass-blured">
 							<div class="goals__title text_grey"> <span class="text-accent_aqua">Rug Soul</span></div>
-							<div class="goals__description">Built on the Polygon Layer 2 network, we are creating a bigger & better space for artists to showcase their talents, collectors to invest in timeless pieces & consumers to own authentic luxury products backed by Real-World Assets (RWA). As a decentralized autonomous organization (DAO), our community plays a vital role in shaping the future of art, culture & innovation.<br><span class="text-accent_orange">Secure your Rug Soul NFT today and be part of a legacy that redefines ownership in both the digital and physical worlds.</span>
+							<div class="goals__description">Built on the Polygon Layer 2 network, we are creating a bigger & better space for artists to showcase their talents, collectors to invest in timeless pieces & consumers to own authentic luxury products backed by Real-World Assets (RWA). As a decentralized autonomous organization (DAO), our community plays a vital role in shaping the future of art, culture & innovation.<br><br><span class="text-accent_orange">Secure your Rug Soul NFT today and be part of a legacy that redefines ownership in both the digital and physical worlds.</span>
 <br>
 <br>
 <a href="timeline.html">
@@ -286,7 +306,7 @@ button:active {
 							<div class="what-we-do__years-block years-block block-cross-out">
 								<div class="years-block__quantity"> RS </div>
 								<br>
-								<div class="years-block__text text-accent_aqua">369 NFTs</div>
+								<div class="years-block__text text-accent_aqua">1/1 NFTs</div>
 							</div>
 							<p class="what-we-do__text"><span class="text-accent_violet">Rug Soul (RS)</span> Our mission is to preserve culture, empower artisans, redefine luxury by bridging the gap between traditional craftsmanship & blockchain technology. <br><br>Through Real-World Assets (RWA), we bring authenticity & tangible value to digital ownership. While our DAO ensures a transparent, community-driven ecosystem where collectors, creators & investors shape the future together.</p>
 						</div>
@@ -298,7 +318,7 @@ button:active {
 						</div>
 					</div>
 					<!-- //===  ============================================================================================ -->
-
+<div class="arrow"> <a href="#" title="Back to Top"><span class="fas fa-angle-up"></span></a> </div>
 
 										<!-- //======= relocate = section ================================================================== -->
 					<section class="relocate">
@@ -308,15 +328,26 @@ button:active {
     Rug Soul: <span class="relocate__title title"></span>
     <span class="menu__item_gradient"> 369 NFTs </span>
     <a href="https://opensea.io/collection/rug-soul" target="_blank"><br>
-        <button class="btn">OpenSea</button>
+        <button class="btn">OpenSea</button> 
+         <a href="https://rarible.com/rugsoul/items" target="_blank"> <button class="btn">Rarible</button>
+        	<a href="https://magiceden.io/collections/polygon/0x6e1ceaa0c6a2d425080c0ed3779b71b034c427e0" target="_blank"> <button class="btn">MagicEden</button>
     </a>
 </div>
 <br>
 <div class="relocate__title title">
     Thangka Soul: <span class="relocate__title title"></span>
     <span class="menu__item_gradient"> 1/1 NFT </span>
-    <a href="https://rarible.com/thangkasoul/items" target="_blank"><br>
-        <button class="btn">Rarible</button>
+    <a href="https://opensea.io/item/matic/0xd89c832ca16b38b5f24d93f2656b813daa9163af/83301679536665321608016364533039983734816792098638321534344195864231636107265" target="_blank"><br>
+        <button class="btn">OpenSea</button>
+        <a href="https://rarible.com/token/polygon/0xd89c832ca16b38b5f24d93f2656b813daa9163af:83301679536665321608016364533039983734816792098638321534344195864231636107265" target="_blank"> <button class="btn">Rarible</button>
+        	<a href="https://magiceden.io/collections/polygon/0xd89c832ca16b38b5f24d93f2656b813daa9163af" target="_blank"> <button class="btn">MagicEden</button>
+    </a>
+</div>
+<br>
+<div class="relocate__title title">
+    SOUL Coupon: <span class="relocate__title title"></span>
+    <span class="menu__item_gradient"> 8,888 NFT Coupons </span>
+        	<a href="https://magiceden.io/mint-terminal/polygon/0x24f784b597fba23f6b6a592481918c72f2ece36c" target="_blank"> <button class="btn">MagicEden</button>
     </a>
 </div>
 <br>
@@ -324,7 +355,19 @@ button:active {
     Mask Soul: <span class="relocate__title title"></span>
     <span class="menu__item_gradient"> (COMING SOON) </span>
     <a href="#" target="_blank"><br>
+    	<button class="btn">OpenSea</button>
         <button class="btn">Decentraland</button>
+    </a>
+</div>
+<br>
+<div class="relocate__title title">
+    Soul Faces: <span class="relocate__title title"></span>
+    <span class="menu__item_gradient"> (COMING SOON) </span>
+    <a href="#" target="_blank"><br>
+        <button class="btn">OpenSea</button>
+    	<button class="btn">Rarible</button>
+    	<button class="btn">MagicEden</button>
+    	<button class="btn">Decentraland</button>
     </a>
 </div>
 	</div>
@@ -413,7 +456,7 @@ button:active {
 <section class="relocate">
 
 <div class="relocate__text text-relocate">
-							<div class="text-relocate__main  text-accent_aqua">Rug Soul <span class="text-accent_orange">#</span>Hashtags
+							<div class="text-relocate__main  text-accent_gradient">Rug Soul <span class="text-accent_orange">#Hashtags</span>
 							<div class="text-relocate__hashes">#Rugsoul #Polygonsoul #PolygonNFT #369
 								#Rugsoulcoupon #Polygonsoularmy #Rug #369NFTs #Soul #Polygoncommunity #Rugsoulart #RS #UtilityNFT 
 								#Only369
@@ -429,7 +472,7 @@ button:active {
 					<nav class="footer__menu menu-footer">
 						<ul class="menu-footer__items">
 							<li class="menu-footer__item"><a href="roadmap.html">Roadmap</a></li>
-							<li class="menu__item menu__item_gradient"><a href="https://opensea.io/collection/rug-soul">369 NFTs</a></li>
+							<li class="menu__item menu__item_gradient"><a href="nftblog.html">NFT Blog</a></li>
 							<li class="menu-footer__item text-accent_orange"><a href="redeem.html">Redeem NFT</a></li>
 							<li class="menu-footer__item"><a href="contract.html">Contracts</a></li>
 						</ul>
